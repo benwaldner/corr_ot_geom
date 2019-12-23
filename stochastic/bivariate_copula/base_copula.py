@@ -1,3 +1,6 @@
+# https://mediatum.ub.tum.de/doc/1119201/1119201.pdf for the explicit computation of 
+# various copula functions
+
 import numpy as np
 import abc
 from statsmodels.distributions.empirical_distribution import ECDF
@@ -24,6 +27,11 @@ class BivariateCopula(abc.ABC):
         # numerical tolerance
         self._eps = eps
 
+    @property
+    @abc.abstractmethod
+    def name(self):
+        pass
+            
     @property
     def X(self):
         return self._X

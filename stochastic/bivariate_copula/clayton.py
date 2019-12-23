@@ -10,7 +10,10 @@ class ClaytonCopula(BivariateCopula):
                          Y=Y,
                          theta=theta,
                         )
-
+    @property
+    def name(self):
+        return 'Clayton'
+    
     def h(self, u=None, v=None):
         """h = dC/dv = P[U<u | V=v]
         """
