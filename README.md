@@ -8,5 +8,8 @@ Study Frechet barycenter w.r.t Wasserstein distance for correlation matrix metri
 
 Examples on synthetic, random matrices and historical SPX correlations.
 
+<img src="./spx_ot_corr.png"
+     style="float: left; margin-right: 10px;" />
+  
 ### corr_lib
 Utility lib for correlation matrix manipulation and optimal transport metric.
